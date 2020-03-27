@@ -11,7 +11,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.mainClass>MainScript</project.build.mainClass>
-        
+
+        <groovy.version>3.0.2</groovy.version>
         <groovy.eclipse.compiler.version>3.6.0-03</groovy.eclipse.compiler.version>
         <groovy.eclipse.batch.version>3.0.2-02</groovy.eclipse.batch.version>
     </properties>
@@ -20,7 +21,8 @@
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
-            <version>2.4.12</version>
+            <version>${groovy.version}</version>
+            <type>pom</type>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
