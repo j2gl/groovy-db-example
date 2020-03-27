@@ -1,0 +1,23 @@
+# Mac OSX system files
+.DS_Store
+
+# Maven
+target/
+
+# IntelliJ
+.idea/
+.idea
+*.iml
+*.ipr
+*.iws
+*.rdb
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# VS Code
+.vscode/
+bin/
+
