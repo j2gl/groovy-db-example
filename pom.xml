@@ -12,9 +12,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.mainClass>MainScript</project.build.mainClass>
 
-        <groovy.version>3.0.2</groovy.version>
-        <groovy.eclipse.compiler.version>3.6.0-03</groovy.eclipse.compiler.version>
-        <groovy.eclipse.batch.version>3.0.2-02</groovy.eclipse.batch.version>
+        <groovy.version>2.5.10</groovy.version> <!-- 3.0.2 it's still not supported by eclipse-compiler for maven -->
+        <groovy-eclipse-batch.version>3.0.2-02</groovy-eclipse-batch.version>
+        <groovy-eclipse-compiler.version>3.6.0-03</groovy-eclipse-compiler.version>
+        <mysql-connector-java.version>5.1.48</mysql-connector-java.version>
     </properties>
 
     <dependencies>
@@ -27,7 +28,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.47</version>
+            <version>${mysql-connector-java.version}</version>
         </dependency>
     </dependencies>
 
@@ -36,7 +37,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>3.8.0</version>
                 <configuration>
                     <compilerId>groovy-eclipse-compiler</compilerId>
                 </configuration>
@@ -44,20 +45,20 @@
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-eclipse-compiler</artifactId>
-                        <version>${groovy.eclipse.compiler.version}</version>
+                        <version>${groovy-eclipse-compiler.version}</version>
                     </dependency>
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-eclipse-batch</artifactId>
-                        <version>${groovy.eclipse.batch.version}</version>
+                        <version>${groovy-eclipse-batch.version}</version>
                     </dependency>
                 </dependencies>
             </plugin>
 
-            <plugin>
+           <plugin>
                 <groupId>org.codehaus.groovy</groupId>
                 <artifactId>groovy-eclipse-compiler</artifactId>
-                <version>${groovy.eclipse.compiler.version}</version>
+                <version>${groovy-eclipse-compiler.version}</version>
                 <extensions>true</extensions>
             </plugin>
 

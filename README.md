@@ -8,3 +8,7 @@ This is a groovy script that can connect to a database.
 mvn clean package
 java -jar target/groovy-db-0.1.0-jar-with-dependencies.jar 
 ```
+
+## Install Groovy
+
+On MacOS: ```brew install groovysdk```
