@@ -15,7 +15,7 @@
         <groovy.version>2.5.10</groovy.version> <!-- 3.0.2 it's still not supported by eclipse-compiler for maven -->
         <groovy-eclipse-batch.version>3.0.2-02</groovy-eclipse-batch.version>
         <groovy-eclipse-compiler.version>3.6.0-03</groovy-eclipse-compiler.version>
-        <mysql-connector-java.version>5.1.48</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.28</mysql-connector-java.version>
     </properties>
 
     <dependencies>
